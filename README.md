@@ -26,7 +26,7 @@ Schholcool provides a basic interface for navigating through different sections 
 
 ## Contributors 👥
 
-- [Your Name](https://github.com/yourusername) - Creator
+- [Prajwal Bawane](https://github.com/prajwalbawane) - Creator
 
 ## Technologies Used 💻
 
