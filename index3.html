@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schholcool</title>
+    <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="image.png" alt=""></div>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+
+        </nav>
+
+        <div class="dropdown">
+
+            <img class="avatar" src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg" alt="Avatar">
+            <div class="dropdown-content">
+                <a href="#">Logout</a>
+                <a href="#">Edit Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <nav>
+            <div class="avatar">
+                <img src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg " alt="Avtar">
+                <p>Prajwal Bawane</p>
+            </div>
+            <ul>
+
+                <li><i class="fa-solid fa-gauge-simple-high"></i><a href="#">Dashboard</a></li>
+                <li><i class="fa-brands fa-chromecast"></i><a href="#">Classes</a></li>
+                <li><i class="fa-solid fa-book"></i><a href="#">Subjects</a></li>
+                <li><i class="fa-solid fa-chalkboard-user"></i><a href="#">Teachers</a></li>
+                <li><i class="fa-solid fa-user-graduate"></i><a href="index.html">Students</a></li>
+                <li><i class="fa-solid fa-circle-exclamation"></i><a href="#">Notices</a></li>
+                <li><i class="fa-solid fa-bug"></i><a href="#">Complaints</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content goes here -->
+    <div class="container">
+        <div class="box1">
+            <i class="fa-solid fa-gauge-simple-high"></i><a href="#">Dashboard</a>
+        </div>
+        <div class="box"><i class="fa-solid fa-users"></i>
+            <a href=""> Students </a>
+            <div class="student">
+                <h2>1900</h2>
+                <p>Total number of student</p>
+            </div>
+        </div>
+        <div class="box"><i class="fa-solid fa-users"></i><a href="">Teacher </a></div>
+        <div class="box2"><i class="fa-solid fa-calendar-check " style="color: #f0f3f5;"></i><a href="">TODAYS
+                ATTENDANCE</a></div>
+        <div class="box"><i class="fa-solid fa-users"></i><a href="">Parents </a></div>
+        <div class="box"><i class="fa-solid fa-users"></i><a href="">Staff</a> </div>
+        <div class="box"><i class="fa-solid fa-calendar-days"></i><a href="">RECENT EVENTS</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    // JavaScript code for handling edit profile functionality
+    document.querySelector('.dropdown-content a:nth-child(2)').addEventListener('click', function () {
+        document.querySelector('.profile-container').style.display = 'flex';
+    })
+</script>
+
+</html>
