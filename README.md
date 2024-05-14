@@ -1,4 +1,4 @@
-# Schholcool 🏫
+# Schoolcool 🏫
 
 Welcome to Schholcool! This project is a simple HTML webpage for managing school-related information.
 
