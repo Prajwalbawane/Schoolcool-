@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schholcool</title>
+    <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="class.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="image.png" alt=""></div>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+
+        </nav>
+
+        <div class="dropdown">
+
+            <img class="avatar" src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg" alt="Avatar">
+            <div class="dropdown-content">
+                <a href="#">Logout</a>
+                <a href="#">Edit Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <nav>
+            <div class="avatar">
+                <img src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg " alt="Avtar">
+                <p>Prajwal Bawane</p>
+            </div>
+            <ul>
+
+                <li><i class="fa-solid fa-gauge-simple-high"></i><a href="#">Dashboard</a></li>
+                <li><i class="fa-brands fa-chromecast"></i><a href="#">Classes</a></li>
+                <li><i class="fa-solid fa-book"></i><a href="#">Subjects</a></li>
+               
+                <li><i class="fa-solid fa-user-graduate"></i><a href="index.html">Students</a></li>
+                <li><i class="fa-solid fa-user-graduate"></i><a href="index.html">Examination</a></li>
+                <li><i class="fa-solid fa-circle-exclamation"></i><a href="#">Notices</a></li>
+                <li><i class="fa-solid fa-bug"></i><a href="#">Complaints</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main content goes here -->
+    <div class="container">
+        <div class="box1" id="imageBox">
+            <h2>Assignment</h2>
+            </div>
+
+            <div class="box1">
+                <form action="submit_assignment.php" method="post">
+                    <!-- Upload File Input -->
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file">
+                    <br>
+                    
+                    <!-- Publication Status -->
+                    <label for="publication_status">Publication Status:</label>
+                    <select id="publication_status" name="publication_status">
+                        <option value="published">Published</option>
+                        <option value="draft">Draft</option>
+                        <option value="expired">Expired</option>
+                    </select>
+                    <br>
+                    <!-- Class Selection -->
+                    <label for="class_selection">Select Class:</label>
+                    <select id="class_selection" name="class_selection">
+                        <!-- Options for classes go here -->
+                        <option value="class1">Class 1</option>
+                        <option value="class2">Class 2</option>
+                        <!-- Add more options as needed -->
+                    </select><br>
+                    
+                    
+                    <!-- Grade Selection -->
+                    <label for="grade_selection">Select Grade:</label>
+                    <select id="grade_selection" name="grade_selection">
+                        <!-- Options for grades go here -->
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <br>
+                    
+                    <!-- Subject Selection -->
+                    <label for="subject_selection">Select Subject:</label>
+                    <select id="subject_selection" name="subject_selection">
+                        <!-- Options for subjects go here -->
+                        <option value="subject1">Subject 1</option>
+                        <option value="subject2">Subject 2</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <br>
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            
+    </div>
+    
+    
+   
+   
+    
+       
+
+</body>
+<script>
+    // JavaScript code for handling edit profile functionality
+    document.querySelector('.dropdown-content a:nth-child(2)').addEventListener('click', function () {
+        document.querySelector('.profile-container').style.display = 'flex';
+    })
+</script>
+
+</html>
